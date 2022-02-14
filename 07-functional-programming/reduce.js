@@ -13,7 +13,7 @@ let maxReducer = function(current, largestSoFar) {
         return largestSoFar;
     }
 }
-let max = random.reduce(maxReducer, -100000);
+let max = random.reduce(maxReducer, random[0]);
 console.log('max=', max);
 
 function myReduce(arr, reducer, initialValue) {
